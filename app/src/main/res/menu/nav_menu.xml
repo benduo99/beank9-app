@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_status"
+        android:icon="@drawable/ic_status"
+        android:enabled="true"
+        android:title="Status"/>
+
+    <item
+        android:id="@+id/ic_location"
+        android:icon="@drawable/ic_location"
+        android:enabled="true"
+        android:title="Location"/>
+
+    <item
+        android:id="@+id/ic_feed"
+        android:icon="@drawable/ic_feed"
+        android:enabled="true"
+        android:title="Image"/>
+</menu>
