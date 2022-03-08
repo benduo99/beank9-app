@@ -7,6 +7,8 @@ import com.example.beank9.fragments.FeedFragment
 import com.example.beank9.fragments.LocationFragment
 import com.example.beank9.fragments.StatusFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,19 +24,22 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        BottomNavigationView.OnNavigationItemReselectedListener { item ->
-            when (item.itemId){
+        bottom_navigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
                 R.id.ic_status -> {
                     makeCurrentFragment(statusFragment)
+                    true
                 }
                 R.id.ic_location -> {
                     makeCurrentFragment(locationFragment)
+                    true
                 }
                 R.id.ic_feed -> {
                     makeCurrentFragment(feedFragment)
+                    true
                 }
+                else->false
             }
-
         }
 
     }

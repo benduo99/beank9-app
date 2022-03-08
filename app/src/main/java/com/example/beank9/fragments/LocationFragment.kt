@@ -40,7 +40,7 @@ class LocationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_feed, container, false)
+        return inflater.inflate(R.layout.fragment_location, container, false)
     }
 /*
     companion object {
