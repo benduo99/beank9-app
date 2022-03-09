@@ -16,15 +16,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //supportActionBar?.hide() //hide top title
+
+        //define fragments
         val statusFragment = StatusFragment()
         val locationFragment = LocationFragment()
         val feedFragment = FeedFragment()
 
         makeCurrentFragment(statusFragment)
 
-
-
-        bottom_navigation.setOnItemSelectedListener { item ->
+        bottom_navigation.setOnItemSelectedListener { item ->  //Navbar listener
             when (item.itemId) {
                 R.id.ic_status -> {
                     makeCurrentFragment(statusFragment)

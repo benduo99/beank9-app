@@ -16,9 +16,9 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
+            android:text="@string/image_feed"
             android:textSize="40sp"
-            android:textStyle="bold"
-            android:text="Image Feed" />
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

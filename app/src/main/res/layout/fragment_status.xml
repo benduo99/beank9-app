@@ -18,7 +18,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="40sp"
             android:textStyle="bold"
-            android:text="Status" />
+            android:text="@string/status" />
 
     </RelativeLayout>
 

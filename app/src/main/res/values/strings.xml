@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">beank9</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="status">Status</string>
+    <string name="image_feed">Image Feed</string>
+    <string name="location">Location</string>
 </resources>
