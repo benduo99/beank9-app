@@ -4,4 +4,5 @@
     <string name="status">Status</string>
     <string name="image_feed">Image Feed</string>
     <string name="location">Location</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

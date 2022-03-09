@@ -6,8 +6,6 @@ import androidx.fragment.app.Fragment
 import com.example.beank9.fragments.FeedFragment
 import com.example.beank9.fragments.LocationFragment
 import com.example.beank9.fragments.StatusFragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationBarView
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -16,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //supportActionBar?.hide() //hide top title
+        supportActionBar?.hide() //hide top title
 
         //define fragments
         val statusFragment = StatusFragment()
