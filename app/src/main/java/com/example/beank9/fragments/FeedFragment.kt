@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.beank9.R
+import com.squareup.moshi.Json
 
 /**
  * A simple [Fragment] subclass.

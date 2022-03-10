@@ -10,15 +10,54 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="60dp"
             android:textSize="40sp"
             android:textStyle="bold"
-            android:text="@string/status" />
+            android:text="@string/status"
+            android:id="@+id/statusTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_below="@id/statusTitle"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/robotStatus"
+            android:id="@+id/robotStatus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_below="@id/robotStatus"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/batteryStatus"
+            android:id="@+id/batteryCharge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_below="@id/batteryCharge"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/detectionValue"
+            android:id="@+id/detectionValue"/>
+
+
 
     </RelativeLayout>
 

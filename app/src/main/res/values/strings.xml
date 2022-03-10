@@ -2,7 +2,15 @@
     <string name="app_name">beank9</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="status">Status</string>
+    <string name="robotStatus">Robot Status</string>
+    <string name="batteryStatus">Battery Charge Status</string>
+    <string name="detectionValue">Disease Detection Instances</string>
+
+    <string name="location">Beank9 Location</string>
+
     <string name="image_feed">Image Feed</string>
-    <string name="location">Location</string>
+    <string name="feedSummary">Coffee rust detection gallery</string>
+
     <string name="title_activity_maps">MapsActivity</string>
+
 </resources>
