@@ -34,7 +34,7 @@ class LocationFragment : Fragment() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             // Retrieve the content view that renders the map.
-            setContentView(R.layout.fragment_location) //unsure about this line and the reference
+            setContentView(R.layout.activity_maps) //unsure about this line and the reference
 
             // Get the SupportMapFragment and request notification when the map is ready to be used.
             val mapFragment = supportFragmentManager.findFragmentById(R.id.mapFragment) as? SupportMapFragment
