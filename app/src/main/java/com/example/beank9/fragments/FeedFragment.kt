@@ -1,12 +1,13 @@
 package com.example.beank9.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.beank9.databinding.FragmentOverviewBinding
+import com.example.beank9.databinding.FragmentFeedBinding
+import com.example.beank9.overview.OverviewViewModel
 
 /**
  * A simple [Fragment] subclass.
@@ -26,7 +27,7 @@ class FeedFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentOverviewBinding.inflate(inflater)
+        val binding = FragmentFeedBinding.inflate(inflater)
 
         // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
         binding.lifecycleOwner = this

@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.beank9.fragments.FeedFragment
 import com.example.beank9.fragments.LocationFragment
-import com.example.beank9.fragments.MapsActivity
 import com.example.beank9.fragments.StatusFragment
 import kotlinx.android.synthetic.main.activity_main.*
 

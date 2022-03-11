@@ -8,11 +8,14 @@
         <entry key="..\:/Users/Ben/AndroidStudioProjects/beank9/app/src/main/res/layout/fragment_location.xml" value="0.16590678824721378" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/beank9/app/src/main/res/layout/fragment_status.xml" value="0.16590678824721378" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/beank9/app/src/main/res/menu/nav_menu.xml" value="0.33589743589743587" />
+        <entry key="app/src/main/res/drawable/ic_connection_error.xml" value="0.223" />
+        <entry key="app/src/main/res/drawable/loading_img.xml" value="0.223" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.12604166666666666" />
         <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/layout/fragment_location.xml" value="0.12897033691406246" />
         <entry key="app/src/main/res/layout/fragment_status.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/grid_view_item.xml" value="0.2635416666666667" />
       </map>
     </option>
   </component>
