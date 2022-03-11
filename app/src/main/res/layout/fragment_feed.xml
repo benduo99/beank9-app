@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.beank9.fragments.FeedFragment">
 
     <data>
         <variable
@@ -9,10 +10,11 @@
             type="com.example.beank9.overview.OverviewViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!--<androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.beank9.fragments.FeedFragment">
+        tools:context="com.example.beank9.fragments.FeedFragment">-->
+
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -42,7 +44,8 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-        </RelativeLayout>
+        <!--</RelativeLayout>-->
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/photos_grid"
@@ -58,19 +61,20 @@
             app:layout_constraintVertical_bias="0.825"
             app:listData="@{viewModel.photos}"
             app:spanCount="2"
-            tools:itemCount="16"
+            tools:itemCount="6"
             tools:listitem="@layout/grid_view_item" />
 
         <ImageView
             android:id="@+id/status_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:photoApiStatus="@{viewModel.status}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:photoApiStatus="@{viewModel.status}"/>
+    </RelativeLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
 
 </layout>
