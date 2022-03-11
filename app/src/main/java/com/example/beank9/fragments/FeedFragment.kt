@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.beank9.R
-import com.squareup.moshi.Json
+import androidx.fragment.app.viewModels
+import com.example.beank9.databinding.FragmentOverviewBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -16,12 +16,24 @@ import com.squareup.moshi.Json
 
 class FeedFragment : Fragment() {
 
+    private val viewModel: OverviewViewModel by viewModels()
+
+    /**
+     * Inflates the layout with Data Binding, sets its lifecycle owner to the OverviewFragment
+     * to enable Data Binding to observe LiveData, and sets up the RecyclerView with an adapter.
+     */
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_feed, container, false)
-    }
+        val binding = FragmentOverviewBinding.inflate(inflater)
 
+        // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
+        binding.lifecycleOwner = this
+
+        // Giving the binding access to the OverviewViewModel
+        binding.viewModel = viewModel
+
+        return binding.root
+    }
 }

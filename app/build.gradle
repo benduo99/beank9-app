@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    dataBinding {
+        enabled = true
+    }
     buildFeatures {
         viewBinding true
     }
@@ -63,5 +66,11 @@ dependencies {
     // Retrofit with Moshi Converter
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
 
+    // databinding
+    kapt "com.android.databinding:compiler:7.1.2"
 
+}
+
+kapt {
+    generateStubs = true
 }
