@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.beank9.R
 import com.example.beank9.databinding.FragmentFeedBinding
 import com.example.beank9.overview.OverviewViewModel
 
